@@ -1,10 +1,9 @@
-# AWS Bakup
+# AWS Backup Vault
 
-Creates and manages AWS Backup resources.
+Creates an AWS Backup Vault resource.
 
-Note that all resources are created by submodules. This module is a wrapper around those submodules to make it easier to create and manage AWS Backup resources.
+See the [Terraform documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/backup_vault) for more information on the limitations / requirements for using this resource.
 
-WIP
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 Auto-generated technical documentation is created using [`terraform-docs`](https://terraform-docs.io/)
@@ -23,17 +22,21 @@ Auto-generated technical documentation is created using [`terraform-docs`](https
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.43.0 |
 
 ## Modules
 
-| Name | Source | Version |
-|------|--------|---------|
-| <a name="module_vault"></a> [vault](#module\_vault) | ./modules/backup-vault | n/a |
+No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [aws_backup_vault.vault](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/backup_vault) | resource |
+| [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
+| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
 
 ## Inputs
 
@@ -49,7 +52,7 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_vault-module"></a> [vault-module](#output\_vault-module) | A map of properties for the created AWS Backup Vault. |
+| <a name="output_vault"></a> [vault](#output\_vault) | A map of properties for the created AWS Backup Vault. |
 
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

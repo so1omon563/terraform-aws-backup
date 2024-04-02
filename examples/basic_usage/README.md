@@ -19,17 +19,17 @@ provider "aws" {
   }
 }
 
-module "sns_topic" {
-  source  = "so1omon563/sns/aws"
-  version = "2.0.0" # Replace with appropriate version
+# module "sns_topic" {
+#   source  = "so1omon563/sns/aws"
+#   version = "2.0.0" # Replace with appropriate version
 
-  name         = "example-topic"
-  topic_prefix = "my-product-name"
-  tags = {
-    example = "true"
-  }
-}
-output "sns_topic" { value = module.sns_topic }
+#   name         = "example-topic"
+#   topic_prefix = "my-product-name"
+#   tags = {
+#     example = "true"
+#   }
+# }
+# output "sns_topic" { value = module.sns_topic }
 ```
 
 ## Requirements
@@ -42,9 +42,7 @@ No providers.
 
 ## Modules
 
-| Name | Source | Version |
-|------|--------|---------|
-| <a name="module_sns_topic"></a> [sns\_topic](#module\_sns\_topic) | so1omon563/sns/aws | 2.0.0 |
+No modules.
 
 ## Resources
 
@@ -56,9 +54,7 @@ No inputs.
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_sns_topic"></a> [sns\_topic](#output\_sns\_topic) | n/a |
+No outputs.
 
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
